@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AppDirective } from './app.directive';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'home3rd2d';
+
+  onFormSubmit() {
+    console.log('You clicked');
+  }
+
+
 }
